@@ -34,6 +34,22 @@ export default {
       },
       white: "#FFFFFF",
     },
+    spacing: {
+      0: "0",
+      25: "0.125rem",
+      50: "0.25rem",
+      75: "0.375rem",
+      100: "0.5rem",
+      150: "0.75rem",
+      200: "1rem",
+      250: "1.25rem",
+      300: "1.5rem",
+      400: "2rem",
+      500: "2.5rem",
+      600: "3rem",
+      800: "4rem",
+      1000: "5rem",
+    },
   },
   plugins: [
     plugin(({ addVariant }) => {
