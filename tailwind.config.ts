@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
 export default {
@@ -45,6 +46,61 @@ export default {
       20: "1.25rem",
       24: "1.5rem",
       full: "9999px",
+    },
+    fontFamily: {
+      mono: ["Source Code Pro", ...defaultTheme.fontFamily.mono],
+      sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      serif: ["Noto Serif", ...defaultTheme.fontFamily.serif],
+    },
+    fontSize: {
+      "preset-1": [
+        "1.5rem",
+        {
+          lineHeight: "1.2",
+          letterSpacing: "-0.03125rem",
+          fontWeight: 700,
+        },
+      ],
+      "preset-2": [
+        "1.25rem",
+        {
+          lineHeight: "1.2",
+          letterSpacing: "-0.03125rem",
+          fontWeight: 700,
+        },
+      ],
+      "preset-3": [
+        "1rem",
+        {
+          lineHeight: "1.2",
+          letterSpacing: "-0.01875rem",
+          fontWeight: 600,
+        },
+      ],
+      "preset-4": [
+        "0.875rem",
+        {
+          lineHeight: "1.2",
+          letterSpacing: "-0.0125rem",
+          fontWeight: 500,
+        },
+      ],
+      "preset-5": [
+        "0.875rem",
+        {
+          lineHeight: "1.2",
+          letterSpacing: "-0.0125rem",
+          fontWeight: 400,
+        },
+      ],
+      "preset-6": [
+        "0.75rem",
+        {
+          lineHeight: "1.2",
+          letterSpacing: "-0.0125rem",
+          fontWeight: 400,
+        },
+      ],
     },
     spacing: {
       0: "0",
