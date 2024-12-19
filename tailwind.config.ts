@@ -47,6 +47,10 @@ export default {
       24: "1.5rem",
       full: "9999px",
     },
+    boxShadow: {
+      small: "0 4px 6px 0 rgba(240, 240, 240, 0.60)",
+      large: "0 8px 12px 0 rgba(240, 240, 240, 0.60)",
+    },
     fontFamily: {
       mono: ["Source Code Pro", ...defaultTheme.fontFamily.mono],
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
